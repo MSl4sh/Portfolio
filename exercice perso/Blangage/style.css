@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap');
+
+*,::before,::after{
+
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+header{
+    display:flex;
+    height: 70px;
+    margin: 50px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.fleche{
+    display: inline-block;
+    transform: rotate(90deg);
+    margin-left: 5px;
+}
+
+header ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 100px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: 0.2s;
+    
+}
+
+header ul li:hover{
+    transition: 0.2s;
+    transform: scale(1.1);
+    cursor:pointer;
+    
+}
+
+header ul li button {
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    padding:15px;
+    background-color: unset;
+    border-radius: 20px;
+    font-weight: 700;
+    transition: 0.3s;
+
+}
+header ul li button:hover {
+
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+    
+
+}
+
+main{
+    display:flex;
+    margin: 60px;
+    height: 100px;
+    
+    
+    height:900px
+
+}
+
+.texte{
+    font-family: 'Open Sans', sans-serif;
+    width:30%;
+    margin-top: 50px;
+    
+
+}
+.texte button{
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    font-size: 1.2rem;
+    padding:15px;
+    background-color: rgb(43, 1, 81);
+    border-radius: 20px;
+    color: white;
+    margin-top: 50px;
+
+    
+
+}
+.texte button:hover{
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    font-size: 1.2rem;
+    padding:15px;
+    background-color: rgb(89, 0, 107);
+    border-radius: 20px;
+    color: white;
+    margin-top: 50px;
+    cursor: pointer;
+
+    
+
+}
+
+.texte h1{
+    font-size:5rem;
+    margin-bottom:50px;
+    white-space: inherit;
+    line-height: 90px;
+
+}
+.texte p{
+    font-size:1.5rem;
+    
+    
+
+}
+.image img{
+    position:absolute;
+    width:60%;
+    right: 30px;
+
+}
+
+.background{
+    background-image:url(./img/bg.jpg);
+    position:absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    width:100%;
+    height: 100vh;
+}
+
+
+footer ul {
+    list-style: none;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    top:90vh;
+    left:0;
+}
+footer ul li{
+    position: relative;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+
+}
+
