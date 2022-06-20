@@ -47,7 +47,7 @@ header{
     
 }
 .scrolled{
-    background-color: rgba(0, 24, 65, 0.3);
+    background-color: rgba(23, 45, 82, 0.7);
 
 
 }
@@ -78,6 +78,25 @@ nav ul a{
     pointer-events: none;
     text-shadow: 4px 4px 4px rgba(255, 255, 255,0.5);
     transition: 0.3s;
+}
+
+button{
+    margin-top: 20px;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+    border-color: rgb(58, 96, 191);
+    background: none;
+    color: white;
+    width: 10%;
+    height: 10%;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.2rem;
+    bottom: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
 }
 
 .hoverUnderline {
@@ -386,17 +405,38 @@ main div h1{
 .projet1{
     border-radius: 10px;
     width: 35%;
-    height:60vh;
+    height:70vh;
     text-align: center;
     margin-left: 10%;
     margin-bottom: 50px;
     box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
     transition: 0.3s;
     color: white;
-    
+    position: relative;
     
     
 }
+.link{
+    width:100%;
+    position:absolute;
+    margin: auto;
+    bottom:10px;
+    right: auto;
+    left:auto;
+
+}
+.link a img{
+    width:13%;
+    margin-inline: 50px;
+    
+    
+}
+.link a img:hover::after{
+    content: attr(data-tooltip);
+}
+
+
+
 
 .projet1:hover{
 
@@ -444,7 +484,6 @@ main div h1{
 .formulaire{
     width: 60%;
     padding:20px 20px;
-    
     height: fit-content;
     text-align: center;
     margin: auto; 

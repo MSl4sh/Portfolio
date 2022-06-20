@@ -33,7 +33,7 @@ window.addEventListener("scroll", function(){
         document.getElementById("accBtn").classList.add("hoverUnderline")
  
     }
-    if(window.scrollY >=836 && window.scrollY<1764){
+    if(window.scrollY >=800 && window.scrollY<1764){
         document.getElementById("preBtn").classList.remove("hoverUnderline")
         document.getElementById("preBtn").classList.add("secFocus")
     }
@@ -42,7 +42,7 @@ window.addEventListener("scroll", function(){
         document.getElementById("preBtn").classList.add("hoverUnderline")
  
     }
-    if(window.scrollY >=1765 && window.scrollY<2877){
+    if(window.scrollY >=1764 && window.scrollY<2877){
         document.getElementById("compBtn").classList.remove("hoverUnderline")
         document.getElementById("compBtn").classList.add("secFocus")
     }
@@ -51,7 +51,7 @@ window.addEventListener("scroll", function(){
         document.getElementById("compBtn").classList.add("hoverUnderline")
  
     }
-    if(window.scrollY >=2971 && window.scrollY<4315){
+    if(window.scrollY >=2877 && window.scrollY<4315){
         document.getElementById("proBtn").classList.remove("hoverUnderline")
         document.getElementById("proBtn").classList.add("secFocus")
     }
@@ -60,7 +60,7 @@ window.addEventListener("scroll", function(){
         document.getElementById("proBtn").classList.add("hoverUnderline")
  
     }
-    if(window.scrollY >=4316 && window.scrollY<4600){
+    if(window.scrollY >=4315 && window.scrollY<5000){
         document.getElementById("conBtn").classList.remove("hoverUnderline")
         document.getElementById("conBtn").classList.add("secFocus")
     }
@@ -70,3 +70,7 @@ window.addEventListener("scroll", function(){
  
     }
 })  
+
+tippy('#gitTooltip',{
+    content:"voir le repo github",
+})
