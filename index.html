@@ -21,15 +21,15 @@
 
       
 
-        <div class="motif">
+        <button onclick="retour()" class="homePassive">Retour à l'accueil</button>
           <header>
               <nav data-aos="fade-down" data-aos-delay="500">
                   <ul>
-                    <li class="hoverUnderline">Accueil</li>
-                    <li class="hoverUnderline">Présentation</li>
-                    <li class="hoverUnderline">Compétences</li>
-                    <li class="hoverUnderline">Projets</li>
-                    <li class="hoverUnderline">Contact</li>
+                    <li id="acceuil" class="hoverUnderline" onclick="test()">Accueil</li>
+                    <li id="presentation"class="hoverUnderline" onclick="presentation()">Présentation</li>
+                    <li id="competence" class="hoverUnderline" onclick="competence()">Compétences</li>
+                    <li id="projet" class="hoverUnderline" onclick="projet()">Projets</li>
+                    <li id="contact" class="hoverUnderline" onclick="contact()">Contact</li>
                   </ul>
                 </nav>
           </header>
@@ -61,7 +61,9 @@
                   <p class="pablo">-Pablo Picasso</p>
               </div>
             </div>
-
+            <div class="divTitle" data-aos="fade-up">
+              <h1>Mes compétences</h1>
+            </div>
             <div class="competence" data-aos="flip-up">
               <div class="front" data-aos="fade-right" data-aos-delay="200">
                 <p>Front-end</p>
@@ -85,6 +87,9 @@
                 <div class="vue">
                   <img src="./img/VueLogo-Récupéré.png" alt="" />
                 </div>
+                <div class="react">
+                  <img src="./img/reactLogo-Récupéré.png" alt="" />
+                </div>
               </div>
               <div class="back" data-aos="fade-up" data-aos-delay="200">
                 <p>Back-end</p>
@@ -97,9 +102,7 @@
                 <div class="JAVASCRIPT">
                   <img src="./img/javascriptLogo.png" alt="" />
                 </div>
-                <div class="react">
-                  <img src="./img/reactLogo-Récupéré.png" alt="" />
-                </div>
+                
               </div>
               <div class="d" data-aos="fade-left" data-aos-delay="200">
                 <p>Compétences</p>
@@ -121,13 +124,16 @@
                 </div>
               </div>
             </div>
+            <div class="divTitle" data-aos="fade-up">
+              <h1>Mes projets</h1>
+            </div>
             <div class="project">
               <div class="projet1" data-aos="fade-right">
                 <img src="./img/Projets/jellyfish.png" alt="" />
                 <div class="description">
                   <h2>JellyFish</h2>
                   <p>
-                    JellyFish est un bot discord de modération developpé en javascript
+                    JellyFish est un bot discord de modération développé en javascript
                   </p>
                   <p>
                     JellyFish comporte toutes les fonctionnalités que l'on attend d'un
@@ -141,7 +147,7 @@
                 <div class="description">
                   <h2>Netflix</h2>
                   <p>
-                    Ce projet consistait en un exercice visant à reproduire le design
+                    Ce projet consiste en un exercice visant à reproduire le design
                     et les fonctionnalités de la page d'accueil de la plateforme
                     Netflix.
                   </p>
@@ -162,8 +168,31 @@
                 </div>
               </div>
             </div>
+            <div class="divTitle" data-aos="fade-up">
+              <h1>Contactez-moi</h1>
+            </div>
             <div class="contact">
-              <h1>contactez-moi</h1>
+              <div class="formulaire" data-aos="fade-up">
+                <form action="" method="post">
+                  <fieldset>
+                  <legend>Laissez-moi un message</legend>
+                  <div class="labels">
+                    <div class="label1">
+                      <label for="user_name">Votre nom:</label>
+                      <input type="text" name="user_name" class="user_name">
+                    </div>
+                    <div class="label2">
+                      <label for="user_name">Votre email:</label>
+                      <input type="text" name="user_name" class="user_name">
+                    </div>
+                  </div>
+
+                  <label for="user_message">Votre message:</label>
+                  <textarea rows="15" name="commentaire" class="textearea"></textarea>
+                  </fieldset>
+                  <input type="button" onclick="" value="Envoyer" class="button">
+              </form>
+              </div>
             </div>
           </main>
 
