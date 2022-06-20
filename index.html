@@ -25,16 +25,16 @@
           <header>
               <nav data-aos="fade-down" data-aos-delay="500">
                   <ul>
-                    <li id="acceuil" class="hoverUnderline" onclick="test()">Accueil</li>
-                    <li id="presentation"class="hoverUnderline" onclick="presentation()">Présentation</li>
-                    <li id="competence" class="hoverUnderline" onclick="competence()">Compétences</li>
-                    <li id="projet" class="hoverUnderline" onclick="projet()">Projets</li>
-                    <li id="contact" class="hoverUnderline" onclick="contact()">Contact</li>
+                    <a href="#accueil" class="hoverUnderline " id="accBtn">Accueil</a>
+                    <a href="#presentation" class="hoverUnderline "id="preBtn">Présentation</a>
+                    <a href="#competences" class="hoverUnderline "id="compBtn">Compétences</a>
+                    <a href="#projets" class="hoverUnderline "id="proBtn">Projets</a>
+                    <a href="#contact" class="hoverUnderline "id="conBtn">Contact</a>
                   </ul>
                 </nav>
           </header>
           <main>
-            <div class="presentation">
+            <div class="presentation" id="accueil">
               <div class="centre">
                 <div class="presentationcont" data-aos="fade-up">
                   <img src="./img/photo.png" alt="" />
@@ -52,7 +52,7 @@
                 </div>
               </div>
             </div>
-            <div class="apropos">
+            <div class="apropos" id="presentation">
               <div class="apcont" data-aos="fade-up">
                   <h1>À propos de moi...</h1>
                   <p>Graphiste de formation et grand passionné d'informatique depuis mon plus jeune âge, j'ai décidé en ce début 2022 d'en faire mon métier. J'ai donc suivi une formation de 2 mois intitulée "Découverte des métiers de l'informatique" pendant laquelle le développement web m'est apparu comme une passion.</p>
@@ -61,10 +61,11 @@
                   <p class="pablo">-Pablo Picasso</p>
               </div>
             </div>
+            <section id="competences"></section>
             <div class="divTitle" data-aos="fade-up">
-              <h1>Mes compétences</h1>
+              <h1 id="competences">Mes compétences</h1>
             </div>
-            <div class="competence" data-aos="flip-up">
+            <div class="competence" data-aos="flip-up" >
               <div class="front" data-aos="fade-right" data-aos-delay="200">
                 <p>Front-end</p>
                 <h2>En apprentissage</h2>
@@ -124,7 +125,8 @@
                 </div>
               </div>
             </div>
-            <div class="divTitle" data-aos="fade-up">
+            <section id="projets"></section>
+            <div class="divTitle" data-aos="fade-up" >
               <h1>Mes projets</h1>
             </div>
             <div class="project">
@@ -168,7 +170,7 @@
                 </div>
               </div>
             </div>
-            <div class="divTitle" data-aos="fade-up">
+            <div class="divTitle" data-aos="fade-up" id="contact">
               <h1>Contactez-moi</h1>
             </div>
             <div class="contact">
