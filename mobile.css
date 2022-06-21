@@ -1,4 +1,4 @@
-@media screen and (max-width:425px) {
+@media screen and (max-width:450px) {
     header{
         display: none;
     }
@@ -91,7 +91,7 @@
     }
     .front div img, .back div img, .d div img{
         width: 20%;
-        margin: 30px 30px;
+        margin: 30px 20px;
         
         
         
