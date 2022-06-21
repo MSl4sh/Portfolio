@@ -1,0 +1,159 @@
+@media screen and (max-width:425px) {
+    header{
+        display: none;
+    }
+    .centre{
+        display: block;
+        text-align: center;
+        top: 20%;
+        margin-left: auto;
+        margin-right: auto;
+        
+    
+    }
+    .presentation{
+        height: fit-content;
+        width: 100%;
+    }
+    .presentationcont{
+        width: 100vw;
+        text-align: center;
+        height: 50vh;
+        
+        
+    }
+
+    .presentation img {
+
+        width:30%;
+        /* vertical-align: middle; */
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        
+         
+    }
+
+    .titre {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    .apcont h1{
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+    .apcont p{
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+    
+    .citation{
+        margin-top: 50px;
+        font-size: 1.3rem;
+        font-weight: 400;
+        font-style: italic;
+        color: rgb(100, 178, 250);
+        height: fit-content;
+        width: 100%;
+    }
+
+    .pablo {
+        margin-top: 5px;
+        margin-bottom: 50px;
+        font-style: italic;
+        text-align: center;
+        font-size: 0.2rem;
+        height: fit-content;
+        
+    }
+    h1{
+        font-size: 2rem;
+
+    }
+    .competence{
+        height: 100vh;
+        display: contents;
+        /* box-shadow: 0 0 14px rgba(0, 0, 0, 0.3); */
+        color:rgb(109, 109, 109);
+        overflow: hidden;
+        
+    }
+    .competence div{
+        display:block;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+        
+    }
+    .front div img, .back div img, .d div img{
+        width: 20%;
+        margin: 30px 30px;
+        
+        
+        
+    }
+    .front div, .back div,.d div {
+        display: inline;
+        height: fit-content;
+        
+    }
+    .project{
+        height:fit-content;
+        font-family: 'Work Sans', sans-serif;
+        color: rgb(100, 178, 250);
+        padding:0px;
+        width: fit-content;
+        align-items: center;
+       
+    }
+    
+
+    .projet1{
+        border-radius: 10px;
+        justify-items: center;
+        height:70vh;
+        width: 100%;
+        box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+        transition: 0.3s;
+        color: white;
+        display:block;
+        margin: 0;
+        margin-bottom: 10px;
+        background-color: rgba(53, 70, 105, 0.672);
+        overflow: hidden;
+        
+        
+        
+        
+        
+    }
+    .projet1:hover{
+        
+        transition: 3s;
+        
+    }
+    .link a img{
+        width:30%;
+        margin-inline: 20px;
+        opacity:1;
+        pointer-events: none;
+    }
+    .projet1:hover .link a img{
+        opacity: 1;
+        
+        
+    }
+
+    .formulaire a img{
+        width: 50%;
+        display: flex;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+       
+}

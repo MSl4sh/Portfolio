@@ -3,17 +3,15 @@ const home = document.querySelector(".homePassive")
 
 window.addEventListener("scroll", function(){
 
-	if(window.scrollY >= 200){
+	if(window.scrollY > 200 ){
 		header.classList.add("scrolled")
-        home.style.display = "block"
+        
 	}
 	else{
 		header.classList.remove("scrolled")
-        home.style.display = "none"  
+         
 	}
-    if(window.scrollY>10){
-        console.log(window.scrollY)
-    }
+    
 });
 
 function retour(){
@@ -71,6 +69,3 @@ window.addEventListener("scroll", function(){
     }
 })  
 
-tippy('#gitTooltip',{
-    content:"voir le repo github",
-})
