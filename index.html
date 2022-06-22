@@ -7,6 +7,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mobile.css">
+    
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
@@ -194,8 +195,35 @@
               <div class="formulaire" data-aos="fade-up">
                 <a href="https://github.com/MSl4sh" target="_blank"><img src="./img/githubLogo.png" alt=""></a>
                 <a href="https://www.linkedin.com/in/donovan-duperrois-b31ba7237/" target="_blank"><img src="./img/LinkedinLogo.png" alt=""></a>
-                <a href=""><img src="./img/gmailLogo.png" alt=""></a>
+                <a href="#mail"><img src="./img/gmailLogo.png" alt="" onclick="mail()"></a>
               </div>
+            </div>
+            <div class="mail" id="mail">
+              <form action="" method="">
+                <label for="username">Nom :</label>
+            <br>
+            
+            <input type="text" required="required" name="username" id="userName">
+            <br>
+            <br>
+            <label for="userMail"> Votre email:</label>
+            <br>
+            
+            <input type="text" required="required" name="userMail" id="userMail">   
+            <br>
+            <br>
+            <label for="email">Tapez votre message ici :</label>
+            <br>
+            <textarea rows="15" name="email" id="commentaire"></textarea>
+            <br>
+            <br>
+            <button type="button" onclick="annuler()">Annuler</button>
+            <button type="button" onclick="poster()">Envoyer</button>
+              </form>
+            </div>
+            <div id="merci">
+              <h1>Merci pour votre message !</h1>
+              <h1>J'y répondrai dans les plus bref délais.</h1>
             </div>
           </main>
 

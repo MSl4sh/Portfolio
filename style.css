@@ -68,12 +68,12 @@ nav ul a{
     font-weight: 300;
 }
 .secFocus{
-    
+    transform: scale(1.1);
     cursor: default;
     pointer-events: none;
     text-shadow: 4px 4px 4px rgba(255, 255, 255,0.5);
     transition: 0.3s;
-    font-weight: 400;
+    
 }
 
 
@@ -495,4 +495,83 @@ main div h1{
     cursor: pointer;
     transform: scale(1.1);
     transition: 0.2s;
+}
+
+.mail  {
+    display: none;
+    width: 100vw;
+    height: 80vh;
+    text-align: center;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2rem;
+}
+
+.mail form{
+    text-align: center;
+    display: inline-block;
+    justify-content: center;
+    
+    
+}
+.mail input{
+    width: 10vw;
+    height: 3vh;
+    resize: none;
+    background: none;
+    border-radius: 10px;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.2rem;
+    padding:10px;
+
+}
+.mail input:focus{
+    background-color: rgba(255,255,255,0.1);
+
+}
+.mail textarea{
+    width: 60vw;
+    resize: none;
+    background: none;
+    border-radius: 10px;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.2rem;
+    padding:10px;
+}
+.mail textarea:focus{
+    background-color: rgba(255,255,255,0.1);
+
+}
+
+.mail button{
+    background: none;
+    color: white;
+    padding: 5px;
+    font-family: 'Work Sans', sans-serif;
+    width: fit-content;
+    font-size: 2rem;
+    border-radius: 10px;
+    border: 1px solid white;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+    margin-right: 20px;
+}
+.mail button:hover{
+    background-color: rgba(255,255,255,0.1);
+}
+
+#merci{
+    display:none;
+    height:60vh;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2rem;
+    
+}
+
+#merci h1{
+    font-weight: 300;
 }

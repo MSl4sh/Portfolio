@@ -6,19 +6,26 @@
         display: block;
         text-align: center;
         top: 20%;
+        margin: 0;
         margin-left: auto;
         margin-right: auto;
+        height: fit-content;
         
     
     }
     .presentation{
         height: 100vh;
         width: 100%;
+        margin-top: 0;
+        overflow-y: hidden;
+        
     }
     .presentationcont{
         width: 100vw;
         text-align: center;
-        height: 50vh;
+        height: fit-content;
+        
+        
         
         
     }
@@ -157,7 +164,9 @@
         
         
     }
-
+    .formulaire{
+        height: 80vh;
+    }
     .formulaire a img{
         width: 50%;
         display: flex;

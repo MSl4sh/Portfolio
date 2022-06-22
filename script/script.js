@@ -1,5 +1,4 @@
 const header = document.querySelector("header")
-const home = document.querySelector(".homePassive")
 
 window.addEventListener("scroll", function(){
 
@@ -68,5 +67,16 @@ window.addEventListener("scroll", function(){
  
     }
 })  
-
-gsap.to()
+ 
+function mail(){
+    document.getElementById("mail").style.display="block"
+    document.getElementById("merci").style.display="none"
+}
+ function annuler(){
+    document.getElementById("mail").style.display="none"
+ }
+function poster(){
+    document.getElementById("mail").style.display="none"
+    document.getElementById("merci").style.display="block"
+    setTimeout('document.getElementById("merci").style.display="none"', 4000)
+}
