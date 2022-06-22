@@ -21,7 +21,7 @@ html{
     width: fit-content;
 }
  body{
-    background-image: url(/img/motif2.png);
+    background-image: url(motif2.png);
     background-size: cover;
     background-repeat: no-repeat;
     
