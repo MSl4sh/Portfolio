@@ -199,26 +199,25 @@
               </div>
             </div>
             <div class="mail" id="mail">
-              <form action="" method="">
+              <form action="" method="" id="contact-form">
                 <label for="username">Nom :</label>
             <br>
-            
+            <input type="hidden" name="contact_number">
             <input type="text" required="required" name="username" id="userName">
             <br>
             <br>
             <label for="userMail"> Votre email:</label>
             <br>
-            
             <input type="text" required="required" name="userMail" id="userMail">   
             <br>
             <br>
             <label for="email">Tapez votre message ici :</label>
             <br>
-            <textarea rows="15" name="email" id="commentaire"></textarea>
+            <textarea rows="15" name="message" id="user_Message"></textarea>
             <br>
             <br>
             <button type="button" onclick="annuler()">Annuler</button>
-            <button type="button" onclick="poster()">Envoyer</button>
+            <button type="reset" onclick="poster()" >Envoyer</button>
               </form>
             </div>
             <div id="merci">
@@ -233,6 +232,14 @@
           <script>
             AOS.init();
           </script>
+          <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+          <script type="text/javascript">
+            (function () {
+              // https://dashboard.emailjs.com/admin/account
+              emailjs.init('x0HrwbL3gSEHsubsZ');
+            })();
+          </script>
+          
         
 
 

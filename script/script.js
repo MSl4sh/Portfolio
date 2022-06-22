@@ -74,9 +74,31 @@ function mail(){
 }
  function annuler(){
     document.getElementById("mail").style.display="none"
- }
-function poster(){
-    document.getElementById("mail").style.display="none"
-    document.getElementById("merci").style.display="block"
-    setTimeout('document.getElementById("merci").style.display="none"', 4000)
 }
+
+function poster(){
+    var userName = document.getElementById("userName").value
+    var usermail = document.getElementById("userMail").value
+    var usermessage = document.getElementById("user_Message").value
+
+    if ((userName != "") && (usermail != "") && (usermessage != "")){
+        let param={
+            user_name:document.getElementById("userName").value,
+            user_mail:document.getElementById("userMail").value,
+            user_message:document.getElementById("user_Message").value,
+        }
+        emailjs.send("service_h6ghibo","template_h55k9as",param)
+        .then(function(res){
+            console.log("ok",res.status)
+        })
+
+
+        document.getElementById("mail").style.display="none"
+        document.getElementById("merci").style.display="block"
+        setTimeout('document.getElementById("merci").style.display="none"', 4000)
+    }
+    else{
+        alert("Tout les champs doivent être remplis.") 
+    }
+}
+
