@@ -174,5 +174,20 @@
         margin-left: auto;
         margin-right: auto;
     }
-       
+    .mail{
+        height: fit-content;
+    }
+    .mail input{
+        width: 50vw;
+
+    }
+    .mail label{
+        font-size: 1.2rem;
+    }
+    .envoi{
+        margin-right:0;
+    }
+    .mail button{
+        font-size: 1.2rem;
+    }
 }
