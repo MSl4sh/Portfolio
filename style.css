@@ -12,12 +12,20 @@
 html{
     scroll-behavior: smooth;
     background-image: url(./img/bg2.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     
     
     
     width: fit-content;
 }
-
+ body{
+    background-image: url(/img/motif2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+ }
 h1{
     font-weight: 600;
 }
@@ -33,7 +41,7 @@ header{
 }
 
 .scrolled{
-    background-color: rgba(23, 45, 82, 0.7);
+    background-color: rgba(6, 20, 41, 0.7);
 
 
 }
@@ -68,20 +76,7 @@ nav ul a{
     font-weight: 400;
 }
 
-button{
-    margin-top: 20px;
-    justify-content: center;
-    border-radius: 5px;
-    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
-    border-color: rgb(58, 96, 191);
-    background: none;
-    color: white;
-    width: 10%;
-    height: 10%;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1.2rem;
-    bottom: 10px;
-}
+
 a{
     text-decoration: none;
     color: white;
@@ -174,6 +169,7 @@ a{
 
 .line1{
     color: rgb(100, 178, 250);
+    font-size: 3rem;
 
 }
 
@@ -412,8 +408,8 @@ main div h1{
     
 }
 .projet1:hover{
-    background-color: rgba(53, 70, 105, 0.672);
-    transition: 3s;
+    background-color: rgba(53, 70, 105, 0.19);
+    
     
 }
 .link{
@@ -441,14 +437,7 @@ main div h1{
     
 }
 
-.projet1:hover{
 
-    
-    transform: scale(1.1);
-    transition: 2s;
-
-    
-}
 
 .projet1 h2 {
     margin-bottom: 10px;
@@ -500,8 +489,10 @@ main div h1{
 .formulaire a img{
     width: 15%;
     margin-inline: 50px;
+    transition: 0.2s;
 }
 .formulaire img:hover{
     cursor: pointer;
     transform: scale(1.1);
+    transition: 0.2s;
 }

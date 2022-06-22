@@ -69,3 +69,4 @@ window.addEventListener("scroll", function(){
     }
 })  
 
+gsap.to()
